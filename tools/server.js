@@ -1,3 +1,4 @@
+/*
 // express
 import express from 'express';
 // webpack
@@ -10,6 +11,14 @@ import config from '../webpack.config';
 import open from 'open';
 // icon
 import favicon from 'serve-favicon';
+*/
+
+const express = require('express');
+const webpack = require('webpack');
+const path = require('path');
+const config = require('../webpack.config');
+const open = require('open');
+const favicon = require('serve-favicon');
 
 /* eslint-disable no-console */
 

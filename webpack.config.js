@@ -1,10 +1,16 @@
 // webpack
-import webpack from 'webpack';
+//import webpack from 'webpack';
 // path join
-import path from 'path';
+//import path from 'path';
+
+// webpack
+const webpack = require('webpack');
+// path join
+const path = require('path');
 
 // export default
-export default {
+//export default {
+module.exports = {
   // debug true
   debug: true,
   // eval
