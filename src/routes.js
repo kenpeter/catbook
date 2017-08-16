@@ -1,3 +1,8 @@
+// What exactly is routes.js
+// * It uses react router
+// * It has routes
+// * Each has one component and the path they are matching.
+// * It has index route to serve / and it uses HomePage
 // react
 import React from 'react';
 // route, index
