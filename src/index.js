@@ -22,7 +22,8 @@ import { render } from 'react-dom';
 //
 import configureStore from './store/configureStore';
 
-//
+// Provider is like a container with certain
+// functionalities
 import { Provider } from 'react-redux';
 
 // router, history from react router
@@ -30,11 +31,19 @@ import { Router, browserHistory } from 'react-router';
 // routes
 import routes from './routes';
 
+// load actions
+import {loadCats} from './actions/catActions';
+
+// return store back
+const store = configureStore();
+store.dispatch(loadCats());
+
+
 // what exactly is render?
 //
 render(
   <Provider store={store}>
     <Router history={browserHistory} routes={routes} />
-  </Provider>  
+  </Provider>
   document.getElementById('app')
 );

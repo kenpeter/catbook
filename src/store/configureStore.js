@@ -31,7 +31,8 @@ It seems redux thunk will call all thunks...
 import thunk from 'redux-thunk';
 
 // export vs module.exports
-// 
+// export never return, just reference
+// module.exports actually return somethingß
 export default function configureStore() {
   return createStore(
     rootReducer,
